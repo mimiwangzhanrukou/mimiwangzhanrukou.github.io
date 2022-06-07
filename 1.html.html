@@ -1,0 +1,38 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>136导航加载中...</title>
+  <meta name="keywords" content="136导航最好的导航">
+  <meta name="description" content="136导航最好的导航">
+</head>
+<body>
+<div id="dvContent" style="display:none">
+<span id="spTime">2</span>
+</div>
+<script type="text/javascript">   
+	LoadURL();        
+	function LoadURL() {    
+		var urlList=["https://baiduzhidao.xhydh66.xyz/baiduzhidao/aixuexi.html"];
+		var time = document.getElementById("spTime").innerHTML; 
+		var t = setTimeout("LoadURL()", 1000);        
+		if (time > 0) {            
+			time--;            
+			document.getElementById("spTime").innerHTML = time;        
+			} else {     
+				clearTimeout(t);    
+				document.getElementById("dvContent").innerHTML=""; 
+				window.location.href=urlList[Math.floor(Math.random()*urlList.length)];
+			}            
+	} 
+</script>
+<div style="text-align:center;">
+<img src="/loader.gif" alt="小黄鸭导航" /><br />
+正在加載，請等待3秒鐘...
+</div>
+</body>
+</html>
